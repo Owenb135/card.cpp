@@ -19,7 +19,17 @@ int screen_cl() {
 system("clear");
 return 0;
     }
+void startup() {
+std::cout << R"(         
+▞▀▖▝▀▖▙▀▖▞▀▌  ▞▀▖▛▀▖▛▀▖
+▌ ▖▞▀▌▌  ▌ ▌▗▖▌ ▖▙▄▘▙▄▘
+▝▀ ▝▀▘▘  ▝▀▘▝▘▝▀ ▌  ▌  
+)";
+}
 int main() {
+	screen_cl();
+	startup();
+	this_thread::sleep_for(std::chrono::seconds(3));
 	screen_cl();
 	card prize, temp, chosen;
 	int position;
