@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <cstdlib>
 int clubs = 0;
 int diamonds = 1;
 int hearts = 2;
